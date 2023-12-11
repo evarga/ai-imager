@@ -1,0 +1,30 @@
+{
+	"name": "React Based Web Application",
+	"secrets": {
+		"REACT_APP_VISION_KEY": {
+		  "description": "This is the secret key for the Azure Computer Vision service."
+		},
+		"REACT_APP_VISION_ENDPOINT": { 
+			"description": "This is the endpoint for the Azure Computer Vision service."
+		},
+		"REACT_APP_OPENAI_API_KEY": {
+			"description": "This is the API key for the OpenAI service."
+		}
+	},
+	  
+    // Configure tool-specific properties.
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				"ms-azuretools.vscode-azurestaticwebapps",
+                "ms-azuretools.vscode-azureresourcegroups",
+				"GitHub.copilot",
+				"GitHub.copilot-chat"
+			]
+		}
+	},
+
+	"postCreateCommand": "npm install"
+}

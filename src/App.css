@@ -1,0 +1,63 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 10px;
+  color: white;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  display: block;
+  margin: 10px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  color: white;
+  background-color: #282c34;
+  cursor: pointer;
+  display: inline-block;
+}
+
+button:hover {
+  background-color: #61dafb;
+}
+
+#image-url-or-prompt {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+#output {
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  text-align: left;
+}
+
+#image {
+  width: 300px; 
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center
+}
