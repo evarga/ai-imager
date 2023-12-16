@@ -32,6 +32,8 @@ as described below (see also the [devcontainer.json](.devcontainer/devcontainer.
 
 Wait until the container is fully setup; the last step installs dependencies as specified in the package descriptor. The application should be started from the Terminal window by summoning `npm start`.
 
+> Codespaces leverages the [development containers](https://containers.dev) open standard as a way to boost containers with development related content and settings.  
+
 ## Continuous Deployment
 First, a new Azure static web application resource must be created, using the Azure Portal or CLI, and its deployment token copied. The [GitHub workflow file](https://github.com/evarga/ai-imager/blob/main/.github/workflows/azure-static-web-apps.yml) should serve as a guidance what [repository secrets](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#creating-secrets-for-a-repository) must be created (see the `env:` section) including the previously mentioned deployment token (see `AZURE_STATIC_WEB_APPS_API_TOKEN`).
 
