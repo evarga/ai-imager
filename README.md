@@ -9,7 +9,7 @@ This project is used as an educational material to teach and demonstrate in prac
     - React based web application in JavaScript
     - Azure Static Web Apps service
     - Azure Computer Vision service (to describe an image given by its URL)
-    - Public Open AI service (to generate an image based upon a description)
+    - Public OpenAI service (to generate an image based upon a description)
 - How to utilize [GitHub Dependabot](https://github.com/skills/secure-repository-supply-chain) to receive notifications and pull requests regarding version updates and vulnerabilities. 
 - How to properly manage secrets in an application.
 - The importance of properly separating UI styles from rest of the application logic.
@@ -18,9 +18,12 @@ This project is used as an educational material to teach and demonstrate in prac
 # Usage
 The user interface is rudimentary to keep things simple. The *Analyze* button will show an image and a JSON formatted
 description of that image as received from the Azure Computer Vision service. The *Generate* button will produce an
-image based upon the given prompt using the public Open AI service (see the screenshot below). If the application detects that not all secrets were provided as environment variables, then it will simply print a short message at the screen. A new version will need to be deployed having all these secrets specified.
+image based upon the given prompt using the public OpenAI service (see the screenshot below). If the application detects that not all secrets were provided as environment variables, then it will simply print a short message at the screen. A new version will need to be deployed having all these secrets specified.
 
 ![Screenshot of the UI](./screenshot-ui.jpg)
+
+> Observe that hitting the *Generate* button in succession will produce different responses. This is because the OpenAI service is not deterministic.
+
 # Development
 This application can be further developed and run either using GitHub Codespaces or using a local IDE and pushing
 changes back into the repo. Any change in the `main` branch triggers a GitHub Action to execute a workflow for deploying a new
