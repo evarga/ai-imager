@@ -20,7 +20,7 @@ The user interface is rudimentary to keep things simple. The *Analyze* button wi
 description of that image as received from the Azure Computer Vision service. The *Generate* button will produce an
 image based upon the given prompt using the public OpenAI service (see the screenshot below). If the application detects that not all secrets were provided as environment variables, then it will simply print a short message at the screen. A new version will need to be deployed having all these secrets specified.
 
-![Screenshot of the UI](./screenshot-ui.jpg)
+<kbd>![Screenshot of the UI](./screenshot-ui.jpg)</kbd>
 
 > Observe that hitting the *Generate* button in succession will produce different responses. This is because the OpenAI service is not deterministic.
 
