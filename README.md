@@ -1,3 +1,13 @@
+# Table of Contents
+- [Introduction](#introduction)
+- [Usage](#usage)
+- [Development](#development)
+  - [Codespaces](#codespaces)
+  - [Continuous Deployment](#continuous-deployment)
+- [Security Concerns](#security-concerns)
+  - [Some Best Practices that should be Applied](#some-best-practices-that-should-be-applied)
+- [Conclusion](#conclusion)
+
 # Introduction
 This project is used as an educational material to teach and demonstrate in practice the following topics:
 
@@ -52,3 +62,6 @@ This application is far from ready to be given to users. There are numerous secu
 
 ## Some Best Practices that should be Applied
 All user inputs must be sanitized, in this case the image URL. It is advisable to apply the [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) standard to mitigate many previously mentioned issues. Also, consult [SameSite cookies](https://web.dev/articles/samesite-cookies-explained) to prevent CSRF attacks.
+
+# Conclusion
+With the help of AI it is possible to craft interesting mashups that were unimaginable not so long time ago. This project showcases the abilities of OpenAI to understand, describe and synthetize images and potentially do language translations on-the-fly. This project also illustrates many technical details that are common in architecting distributed systems, as well as, best industry pactices, like CI/CD pipelines to automate SDLC related tasks.
