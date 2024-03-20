@@ -1,13 +1,3 @@
-# Table of Contents
-- [Introduction](#introduction)
-- [Usage](#usage)
-- [Development](#development)
-  - [Codespaces](#codespaces)
-  - [Continuous Deployment](#continuous-deployment)
-- [Security Concerns](#security-concerns)
-  - [Some Best Practices that should be Applied](#some-best-practices-that-should-be-applied)
-- [Conclusion](#conclusion)
-
 # Introduction
 This project is used as an educational material to teach and demonstrate in practice the following topics:
 
