@@ -28,15 +28,17 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: ./site
 
       - name: Build
         run: npm run build -- --base /ai-imager/
+        working-directory: ./site
 
       - uses: actions/configure-pages@v4
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: ./site/dist
 
       - name: Deploy
         id: deployment
