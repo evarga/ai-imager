@@ -1,0 +1,1 @@
+../../src/azure-image-analysis.js

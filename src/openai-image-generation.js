@@ -2,6 +2,7 @@
   Using the OpenAI Node.js library in a browser environment is not recommended for security reasons.
   This is why we rely on a standard REST call to the OpenAI API.
 */
+// #region presentation
 const openaiKey = process.env.REACT_APP_OPENAI_API_KEY;
 
 export function isConfigured() {
@@ -23,3 +24,4 @@ export function generateImage(prompt) {
     .then(res => res.data[0].url)
     .catch(err => console.error(err));
 }
+// #endregion presentation

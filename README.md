@@ -14,13 +14,15 @@ This project is used as an educational material to teach and demonstrate in prac
 - How to properly manage secrets in an application.
 - The importance of properly separating UI styles from rest of the application logic.
 - The different ways to communicate with remote services (SDKs, RESTful API calls, etc.).
+- The usage of [slidev](https://sli.dev/) to produce presentations in developer friendly manner and how to publish
+if as a static website via [GitHub Pages](https://pages.github.com/).
 
 # Usage
 The user interface is rudimentary to keep things simple. The *Analyze* button will show an image and a JSON formatted
 description of that image as received from the Azure Computer Vision service. The *Generate* button will produce an
 image based upon the given prompt using the public OpenAI service (see the screenshot below). If the application detects that not all secrets were provided as environment variables, then it will simply print a short message at the screen. A new version will need to be deployed having all these secrets specified.
 
-<kbd>![Screenshot of the UI](./screenshot-ui.jpg)</kbd>
+<kbd>![Screenshot of the UI](./docs/screenshot-ui.jpg)</kbd>
 
 > Observe that hitting the *Generate* button in succession will produce different responses. This is because the OpenAI service is not deterministic.
 
@@ -54,4 +56,4 @@ This application is far from ready to be given to users. There are numerous secu
 All user inputs must be sanitized, in this case the image URL. It is advisable to apply the [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) standard to mitigate many previously mentioned issues. Also, consult [SameSite cookies](https://web.dev/articles/samesite-cookies-explained) to prevent CSRF attacks.
 
 # Conclusion
-With the help of AI it is possible to craft interesting mashups that were unimaginable not so long time ago. This project showcases the abilities of OpenAI to understand, describe and synthetize images and potentially do language translations on-the-fly. This project also illustrates many technical details that are common in architecting distributed systems, as well as, best industry pactices, like CI/CD pipelines to automate SDLC related tasks.
+With the help of AI it is possible to craft interesting mashups that were unimaginable not so long time ago. This project showcases the abilities of OpenAI to understand, describe and synthetize images and potentially do language translations on-the-fly. This project also illustrates many technical details that are common in architecting distributed systems, as well as, the best industry pactices, like CI/CD pipelines to automate SDLC related tasks.
