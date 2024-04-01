@@ -24,7 +24,7 @@ highlighter: shiki
   }
 </style>
 
-<div class="pt-12 absolute bottom-0 left-0 right-0 text-center">
+<div class="pt-12 absolute bottom-1 left-0 right-0 text-center">
   <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10" color="black">
     Press Space for next page <carbon:arrow-right class="inline"/>
   </span>
@@ -38,9 +38,13 @@ highlighter: shiki
 </div>
 
 ---
-layout: two-cols
-layoutClass: gap-20
 hideInToc: true
+---
+
+# Table of Contents
+
+<Toc minDepth="1" maxDepth="2"></Toc>
+
 ---
 
 # Navigation
@@ -56,11 +60,41 @@ Hover in the bottom-left corner to see the navigation's controls panel, [learn m
 | <kbd>up</kbd> | previous slide |
 | <kbd>down</kbd> | next slide |
 
-::right::
+<img
+  v-click
+  class="absolute -bottom-9 -left-7 w-80 opacity-50"
+  src="https://sli.dev/assets/arrow-bottom-left.svg"
+  alt=""
+/>
+<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Hover over here!</p>
 
-# Table of Contents
+---
 
-<Toc minDepth="1" maxDepth="2"></Toc>
+# Use Cases
+
+Use cases are important in scoping a product and understanding the behavioral requirements, through which a user achieves their
+goals by using a system. Use cases can be visualized in many ways, via UML use case diagrams, user journeys, etc. A [user journey diagram](https://mermaid.js.org/syntax/userJourney.html) depicts various actors taking actions in use cases. This helps figure out who is doing what and when to complete each usage scenario.
+
+A use case (or user journey) diagram is not a formal decription of use cases or requirements of a system. These must be separately handled and specified.
+
+---
+layout: center
+---
+
+```mermaid {theme: 'neutral', scale: 0.6}
+journey
+    title Main Usage Scenarios
+    section Set up access keys and token
+      Configure deployment token for static hosting in Azure: 3: Administrator
+    section Analyse Image
+      Specify image URL: 4: User
+      Analyse image and provide description: 5: AI Imager
+      Read description of image: 5: User
+    section Generate Image
+      Describe image: 4: User
+      Read description and generate image: 5: AI Imager
+      Watch and save image: 5: User
+```
 
 ---
 layout: section
