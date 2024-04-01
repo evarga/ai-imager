@@ -13,6 +13,7 @@ class: bg-blue
 transition: slide-up
 hideInToc: true
 highlighter: shiki
+colorSchema: light
 ---
 
 <style>
