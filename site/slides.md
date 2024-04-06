@@ -39,14 +39,6 @@ colorSchema: light
 </div>
 
 ---
-hideInToc: true
----
-
-# Table of Contents
-
-<Toc minDepth="1" maxDepth="2"></Toc>
-
----
 
 # Navigation
 
@@ -68,6 +60,14 @@ Hover in the bottom-left corner to see the navigation's controls panel, [learn m
   alt=""
 />
 <p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Hover over here!</p>
+
+---
+hideInToc: true
+---
+
+# Table of Contents
+
+<Toc minDepth="1" maxDepth="2"></Toc>
 
 ---
 
@@ -120,9 +120,9 @@ transition: fade-out
 
 ## Visualizing a Software Architecture
 
-<v-clicks>
-
 - The [C4 model](https://c4model.com) is superb for visualizing software architecture. There are several diagram types each with various abstraction levels. This project combines the [system context diagram](https://c4model.com/#SystemContextDiagram) and the [container diagram](https://c4model.com/#ContainerDiagram) into something that could be called as *expanded system context* diagram. It shows both the system boundary and major constituent parts of the web application. The main advantages of C4 are its flexibility and informal treatment of diagrams, which allows omitting details not relevant for understanding the content.
+
+<v-clicks>
 
 - A crucial aspect of any visualization system is to keep diagram specifications inside the same version control system where the rest of source code lives. Placing diagrams near code ensures that they will stay in sync with a target system. Furthermore, working with textual diagram files is a more developer friendly experience and allows all sorts of automations. For example, it is possible to transform textual representations into many target formats. This project uses [Mermaid](https://mermaid.js.org) for this purpose.<sup v-if="$clicks >= 2">*</sup>
 
