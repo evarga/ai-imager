@@ -14,7 +14,7 @@ This project is used as an educational material to teach and demonstrate in prac
 - How to properly manage secrets in an application.
 - The importance of properly separating UI styles from rest of the application logic.
 - The different ways to communicate with remote services (SDKs, RESTful API calls, etc.).
-- The usage of [slidev](https://sli.dev/) to produce presentations in developer friendly manner and how to publish it as a static website via [GitHub Pages](https://pages.github.com/). This presentation is available [here](https://evarga.github.io/ai-imager/) and contains information about the architecture and implementation details of this project.
+- Usage of [slidev](https://sli.dev/) in creating presentations in developer friendly manner that is hosted as a static website via [GitHub Pages](https://pages.github.com/). The [website](https://evarga.github.io/ai-imager/) contains information about the architecture and implementation details of this project.
 
 # Usage
 The user interface is rudimentary to keep things simple. The *Analyze* button will show an image and a JSON formatted
