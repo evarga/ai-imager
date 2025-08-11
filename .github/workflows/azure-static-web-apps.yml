@@ -21,7 +21,7 @@ jobs:
     env:
       SKIP_DEPLOY_ON_MISSING_SECRETS: true
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           submodules: true
           lfs: false
